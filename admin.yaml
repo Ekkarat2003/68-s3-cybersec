@@ -1,0 +1,9 @@
+services:
+  s3db:
+    image: dpage/pgadmin4
+    container_name: 68-s3-admin2
+    environment:
+      POSTGRES_EMAIL: ${ADMIN_USER}
+      POSTGRES_PASSWORD: ${ADMIN_PASS}
+    ports: 
+      - ${ADMIN_PORT}:5432
